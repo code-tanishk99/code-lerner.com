@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <meta charset="utf-8">
+    <meta http-equiv="x-uv-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr. Raj Sir</title>
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+</head>
+<body>
+     <div class="about-wrapper">
+        <div class="about-left">
+            <div class="about-left-content">
+                <div>
+                    <div class="shadow">
+                        <div class="about-img">
+                            <img src="educational/rakhi didi.jfif" alt="about-image">
+                        </div>
+                    </div>
+                    <h2>Raj<br>Sir</h2> 
+                    <h3>English Expert</h3>
+                </div>
+               <ul class="icons">
+                <li><a href="https://www.facebook.com/rajarti846"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-twitter"></i></a></i></li>
+                <li><a href=""><i class="fa-brands fa-youtube"></i></a></i></li>
+                <li><a href=""><i class="fa-brands fa-instagram"></i></a></i></li>
+               </ul>
+            </div>
+        </div>
+        <div class="about-right">
+            <h1>hi<span>!</span></h1>
+            <h2>Here's who I am & what i do</h2>
+            <div class="about-btns">
+                <button type="button" class="btn btn-pink">Hire me</button>
+                <a href="shiksha contact.html"> <button type="button" class="btn btn-white">Contact</button></a>
+            </div>
+            <div class="about-para">
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+            </div>
+        </div>
+     </div>
+
+
+<!------------style--------------->
+    <style>
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'poppins',sans-serif;
+}
+
+.about-wrapper{
+    height: 100vh;
+}
+
+.about-left{
+    background: #038ce7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+  .about-left-content > div{
+    background: #610cff;
+    padding: 4rem 4rem 5rem;
+    text-align: center;
+  }
+
+ .about-left-content{
+    box-shadow: 0px 0px 18px -1px rgba(0,0,0,0.39);
+    -webkit-box-shadow: 0px 0px 18px -1px rgba(0,0,0,0.39);
+    -moz-box-shadow: 0px 0px 18px -1px rgba(0,0,0,0.39);
+ }
+
+.about-img img{
+    display: block;
+    width: 200px;
+   
+}
+
+.about-img{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    transition: all 0.5s ease-in-out;
+}
+
+.shadow{
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    cursor: pointer;
+}
+
+.shadow::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    background: rgba(0,0,0, 0.4);
+    transform: translateX(-50%);
+    bottom: -20px;
+    height: 7px;
+    width: 50px;
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+    opacity: 0;
+    transition: all 0.6s ease;
+}
+
+.shadow:hover .about-img{
+    transform: translateY(-10px);
+}
+.shadow:hover::after{
+    opacity: 1;
+}
+
+.about-left-content h2{
+   font-size: 2rem;
+   margin: 2.2rem 0 0.6rem 0;
+   line-height: 1.2;
+   padding-bottom: 1rem;
+   border-bottom: 2px solid white;
+}
+
+.about-left-content h3{
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 5px;
+    margin-top: 1.2rem;
+}
+
+.icons{
+    background:#c3bad1;
+    display: flex;
+    justify-content: center;
+    padding: 0.8rem 0;
+}
+
+.icons li{
+    list-style-type: none;
+    background: #f26a8d;
+    color: white;
+    width: 40px;
+    height: 40px;
+    margin: 0 0.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.icons li:hover{
+    background: rgb(245, 245, 245);
+    color: #000;
+}
+
+.about-right{
+    background: rgb(9, 60, 228);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5rem;
+    text-align: center;
+}
+
+.about-right h1{
+    font-size: 7rem;
+    text-transform: uppercase;
+}
+
+.about-right h1 span{
+    color: #dd2d4a;
+}
+
+.about-right h2{
+    font-weight: 600;
+}
+
+.about-btns{
+    display: flex;
+    margin: 2rem 0;
+}
+
+.btn{
+    border: none;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    border: 2px solid #000;
+    border-radius: 20px;
+    padding: 0.55rem 0;
+    width: 130px;
+    font-weight: 600;
+    background: transparent;
+    margin: 0 0.5rem;
+    cursor: pointer;
+}
+
+.btn.btn-pink{
+   background: #dd2d4a;
+   color: white;
+   border-color: #dd2d4a;
+   transition: all 0.5s ease-in-out;    
+}
+
+.btn.btn-pink:hover{
+    background: transparent;
+    border-color: #dd2d4a;
+    color: black;
+}
+
+
+.btn.btn-white{
+   background: #7801ff;
+   color: white;
+   border-color:#7801ff;
+   transition: all 0.5s ease-in-out;    
+}
+
+.btn.btn-white:hover{
+    background: transparent;
+    border-color: #460ee0;
+    color: black;
+}
+
+.about-para p{
+    font-weight: 300;
+    padding: 0.5rem;
+    opacity: 0.8;
+}
+
+
+@media screen and (min-width:992px){
+    .about-wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .about-left{
+        position: relative;
+    }
+
+    .about-left-content{
+        position: absolute;
+        right: -50px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+</body>
+    
+</html>

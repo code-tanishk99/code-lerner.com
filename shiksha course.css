@@ -1,0 +1,344 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+
+
+
+.container{
+    width: 85%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 25px;  
+    background-color: rgba(233, 213, 228, 0.938);
+}
+
+.row h1{
+    text-align: center;
+    margin-top:5%;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.row h1:hover{
+    background-color: rgb(126, 199, 241);
+    transition: 1s ease-in-out;
+}
+
+.cards{
+    background: linear-gradient(rgba(125, 16, 197, 0.897),rgb(102, 54, 156),rgba(2, 94, 231, 0.904));
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+}
+
+.image-section{
+    height: 225px;
+    background-color: rgb(170, 117, 231);
+}
+
+
+
+.cards .img-one{
+     background-image: url(educational/python\ poster.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+     transition: 0.2s ease;
+    border-radius: 50px;
+}
+
+
+
+.cards .img-two{
+    background-image: url(educational/basic\ computer\ poster.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+}
+
+.cards .img-three{
+    background-image: url(educational/tally\ poster.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50px;
+}
+
+.cards .img-four{
+    background-image: url(educational/graphic-design\ poster.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50px;
+}
+
+.cards .img-five{
+    background-image: url(educational/web\ designing\ poster.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50px;
+}
+
+.cards .img-six{
+    background-image: url(educational/excel\ poster.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    border-radius: 50px;
+}
+
+.cards .img-seven{
+    background-image: url(educational/vfx\ and\ 3d\ animation.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50px;
+}
+
+.cards .img-eight{
+    background-image: url(educational/cyber-security\ course.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50px;
+}
+
+.cards .img-nine{
+    background-image: url(educational/accounting\ \ course.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50px;
+}
+
+.cards .img-ten{
+    background-image: url(educational/hacking\ course.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50px;
+}
+
+.cards .img-eleven{
+    background-image: url(educational/cma.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50px;
+}
+
+.cards .img-twelve{
+    background-image: url(educational/real\ poster\ 1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50px;
+}
+
+
+
+
+.content{
+    padding: 15px 10px;
+    text-align: center;
+}
+
+.content h2{
+    letter-spacing:1.5px;
+}
+
+.content h3{
+    margin-top: 5px;
+    font-family: sans-serif;
+    color: rgb(4, 0, 252);
+}
+
+.content p{
+    margin: 15px 0px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: bold;
+    
+}
+
+.content a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    letter-spacing: 1.5px;
+    display: inline-block;
+    background-color: #7c8dc4;
+    padding: 8px 15px;
+    border-radius: 50px;
+}
+
+.content a:hover{
+    background-color: #002a77;
+    color: #ffffff;
+    transition: 1s ease;
+}
+
+
+
+
+
+
+footer{
+   
+    background: #111;
+    height: auto;
+    width: 100vw;
+    font-family: "open sans";
+    padding-top:40px;
+    color:white;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+
+}
+
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.socials{
+   list-style: none;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 1rem 0 3rem 0;
+}
+
+.socials li{
+    margin: 0 10px;
+
+}
+
+.socials a{ 
+    text-transform: none;
+    color: white;
+}
+
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s  eas e ;
+}
+
+.socials a:hover i{
+    color: aqua;
+}
+
+.footer-bottom{
+    background: #000;
+    width: 100vw;
+    padding: 0px 0;
+    text-align: center;
+}
+
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+
+}
+
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
